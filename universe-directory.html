@@ -1,0 +1,80 @@
+<style>
+/* A SUNFLOWER'S UNIVERSE | Universe Directory
+   Utiliza la imagen original como sprite: se muestra solo el recorte del directorio.
+   Las cinco zonas transparentes son enlaces independientes. */
+#asu-directory-wrap {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 18px auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+#asu-directory-art {
+  position: relative;
+  width: min(100%, 900px);
+  min-width: 760px;
+  aspect-ratio: 897 / 293;
+  margin: 0 auto;
+  background-image: url("https://raw.githubusercontent.com/futuristicsunflower-bit/Sunflower-blog/main/file_000000008300820ab69b194938993af6.png");
+  background-repeat: no-repeat;
+  background-size: 171.24% 349.49%;
+  background-position: 50.2% 92.3%;
+}
+#asu-directory-art a {
+  position: absolute;
+  top: 25.9%;
+  height: 74.1%;
+  display: block;
+  border-radius: 22px;
+  background: transparent;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+#asu-directory-art a:focus-visible {
+  outline: 4px solid #fff4a8;
+  outline-offset: -5px;
+}
+#asu-directory-art .asu-catacumbas { left: 0.1%; width: 19.9%; }
+#asu-directory-art .asu-peliculas { left: 20.0%; width: 19.9%; }
+#asu-directory-art .asu-entretenimiento { left: 40.0%; width: 19.9%; }
+#asu-directory-art .asu-books { left: 60.0%; width: 19.9%; }
+#asu-directory-art .asu-creatividad { left: 80.0%; width: 19.9%; }
+
+@media (max-width: 760px) {
+  #asu-directory-art {
+    width: 900px;
+    min-width: 900px;
+    margin: 0;
+  }
+}
+</style>
+
+<div id="asu-directory-wrap">
+  <section id="asu-directory-art" aria-label="Universe Directory">
+    <a class="asu-catacumbas"
+       href="https://a-sunflower-s-universe.blogspot.com/p/las-catacumbas-de-mi-ser.html"
+       aria-label="Las Catacumbas de mi Ser"
+       title="Las Catacumbas de mi Ser"></a>
+
+    <a class="asu-peliculas"
+       href="https://a-sunflower-s-universe.blogspot.com/p/peliculas-series-y-dibujos-animados.html"
+       aria-label="Películas, series y dibujos animados"
+       title="Películas, series y dibujos animados"></a>
+
+    <a class="asu-entretenimiento"
+       href="https://a-sunflower-s-universe.blogspot.com/search?q=Entretenimiento%20y%20aficiones"
+       aria-label="Entretenimiento y aficiones"
+       title="Entretenimiento y aficiones"></a>
+
+    <a class="asu-books"
+       href="https://a-sunflower-s-universe.blogspot.com/search?q=Books%20%26%20Literature"
+       aria-label="Books and Literature"
+       title="Books & Literature"></a>
+
+    <a class="asu-creatividad"
+       href="https://a-sunflower-s-universe.blogspot.com/search?q=Creatividad%20y%20arte"
+       aria-label="Creatividad y arte"
+       title="Creatividad y arte"></a>
+  </section>
+</div>
