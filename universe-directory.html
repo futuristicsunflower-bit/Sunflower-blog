@@ -48,6 +48,19 @@
     margin: 0;
   }
 }
+/* Ocultar los elementos automáticos de Blogger SOLO en Universe Directory */
+body:has(#asu-directory-wrap) .post-title,
+body:has(#asu-directory-wrap) .post-header,
+body:has(#asu-directory-wrap) .post-footer,
+body:has(#asu-directory-wrap) .post-share-buttons,
+body:has(#asu-directory-wrap) .share-buttons,
+body:has(#asu-directory-wrap) .post-author,
+body:has(#asu-directory-wrap) .post-timestamp,
+body:has(#asu-directory-wrap) .blog-posts .widget-title,
+body:has(#asu-directory-wrap) .blog-posts .title-outer {
+  display: none !important;
+}
+
 </style>
 
 <div id="asu-directory-wrap">
