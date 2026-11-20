@@ -48,17 +48,64 @@
     margin: 0;
   }
 }
-/* Ocultar los elementos automáticos de Blogger SOLO en Universe Directory */
+/* Ocultar título, autor y fecha automáticos SOLO en Universe Directory */
 body:has(#asu-directory-wrap) .post-title,
 body:has(#asu-directory-wrap) .post-header,
-body:has(#asu-directory-wrap) .post-footer,
-body:has(#asu-directory-wrap) .post-share-buttons,
-body:has(#asu-directory-wrap) .share-buttons,
 body:has(#asu-directory-wrap) .post-author,
 body:has(#asu-directory-wrap) .post-timestamp,
 body:has(#asu-directory-wrap) .blog-posts .widget-title,
 body:has(#asu-directory-wrap) .blog-posts .title-outer {
   display: none !important;
+}
+
+/* Compartir: botones compactos y en una sola fila */
+body:has(#asu-directory-wrap) .post-share-buttons,
+body:has(#asu-directory-wrap) .share-buttons,
+body:has(#asu-directory-wrap) .sharing-buttons,
+body:has(#asu-directory-wrap) .sharing-button {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 12px auto !important;
+  padding: 0 !important;
+}
+
+body:has(#asu-directory-wrap) .post-share-buttons a,
+body:has(#asu-directory-wrap) .share-buttons a,
+body:has(#asu-directory-wrap) .sharing-button a,
+body:has(#asu-directory-wrap) .post-share-buttons button,
+body:has(#asu-directory-wrap) .share-buttons button,
+body:has(#asu-directory-wrap) .sharing-button button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 36px !important;
+  min-width: 36px !important;
+  height: 36px !important;
+  min-height: 36px !important;
+  margin: 0 !important;
+  padding: 8px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+}
+
+body:has(#asu-directory-wrap) .post-share-buttons svg,
+body:has(#asu-directory-wrap) .share-buttons svg,
+body:has(#asu-directory-wrap) .sharing-button svg,
+body:has(#asu-directory-wrap) .post-share-buttons img,
+body:has(#asu-directory-wrap) .share-buttons img,
+body:has(#asu-directory-wrap) .sharing-button img {
+  display: block !important;
+  width: 18px !important;
+  max-width: 18px !important;
+  height: 18px !important;
+  max-height: 18px !important;
 }
 
 </style>
