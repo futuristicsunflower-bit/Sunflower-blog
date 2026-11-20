@@ -58,54 +58,95 @@ body:has(#asu-directory-wrap) .blog-posts .title-outer {
   display: none !important;
 }
 
-/* Compartir: botones compactos y en una sola fila */
+/* Compartir: botones circulares dorados con efecto metálico 3D */
 body:has(#asu-directory-wrap) .post-share-buttons,
 body:has(#asu-directory-wrap) .share-buttons,
 body:has(#asu-directory-wrap) .sharing-buttons,
-body:has(#asu-directory-wrap) .sharing-button {
+body:has(#asu-directory-wrap) .post-footer .share-buttons,
+body:has(#asu-directory-wrap) .post-footer .post-share-buttons {
   display: flex !important;
   flex-direction: row !important;
   flex-wrap: wrap !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 8px !important;
-  width: auto !important;
+  gap: 12px !important;
+  width: 100% !important;
   max-width: 100% !important;
   height: auto !important;
-  margin: 12px auto !important;
-  padding: 0 !important;
+  margin: 16px auto !important;
+  padding: 8px 0 !important;
+  list-style: none !important;
 }
 
 body:has(#asu-directory-wrap) .post-share-buttons a,
 body:has(#asu-directory-wrap) .share-buttons a,
-body:has(#asu-directory-wrap) .sharing-button a,
+body:has(#asu-directory-wrap) .sharing-buttons a,
+body:has(#asu-directory-wrap) .post-footer .share-buttons a,
 body:has(#asu-directory-wrap) .post-share-buttons button,
 body:has(#asu-directory-wrap) .share-buttons button,
-body:has(#asu-directory-wrap) .sharing-button button {
+body:has(#asu-directory-wrap) .sharing-buttons button,
+body:has(#asu-directory-wrap) .post-footer .share-buttons button,
+body:has(#asu-directory-wrap) .post-share-buttons .sharing-platform-button,
+body:has(#asu-directory-wrap) .share-buttons .sharing-platform-button {
+  box-sizing: border-box !important;
   display: inline-flex !important;
+  flex: 0 0 42px !important;
   align-items: center !important;
   justify-content: center !important;
-  width: 36px !important;
-  min-width: 36px !important;
-  height: 36px !important;
-  min-height: 36px !important;
+  width: 42px !important;
+  min-width: 42px !important;
+  max-width: 42px !important;
+  height: 42px !important;
+  min-height: 42px !important;
+  max-height: 42px !important;
   margin: 0 !important;
-  padding: 8px !important;
+  padding: 9px !important;
+  border: 2px solid #fff0b3 !important;
   border-radius: 50% !important;
+  color: #6f1238 !important;
+  background: linear-gradient(145deg, #fff7cf 0%, #e8bd55 24%, #b77a19 52%, #f8df91 76%, #a66a12 100%) !important;
+  box-shadow:
+    inset 0 2px 3px #fffde0,
+    inset 0 -3px 4px #87500d,
+    0 2px 0 #75430c,
+    0 4px 8px #5b163b55 !important;
   overflow: hidden !important;
+  text-decoration: none !important;
+  line-height: 1 !important;
+}
+
+body:has(#asu-directory-wrap) .post-share-buttons a:active,
+body:has(#asu-directory-wrap) .share-buttons a:active,
+body:has(#asu-directory-wrap) .sharing-buttons a:active,
+body:has(#asu-directory-wrap) .post-share-buttons button:active,
+body:has(#asu-directory-wrap) .share-buttons button:active {
+  transform: translateY(2px) !important;
+  box-shadow:
+    inset 0 2px 5px #75430c,
+    0 1px 0 #75430c,
+    0 2px 4px #5b163b44 !important;
 }
 
 body:has(#asu-directory-wrap) .post-share-buttons svg,
 body:has(#asu-directory-wrap) .share-buttons svg,
-body:has(#asu-directory-wrap) .sharing-button svg,
+body:has(#asu-directory-wrap) .sharing-buttons svg,
 body:has(#asu-directory-wrap) .post-share-buttons img,
 body:has(#asu-directory-wrap) .share-buttons img,
-body:has(#asu-directory-wrap) .sharing-button img {
+body:has(#asu-directory-wrap) .sharing-buttons img {
   display: block !important;
-  width: 18px !important;
-  max-width: 18px !important;
-  height: 18px !important;
-  max-height: 18px !important;
+  width: 20px !important;
+  min-width: 20px !important;
+  max-width: 20px !important;
+  height: 20px !important;
+  min-height: 20px !important;
+  max-height: 20px !important;
+  object-fit: contain !important;
+}
+
+body:has(#asu-directory-wrap) .post-share-buttons .share-button-text,
+body:has(#asu-directory-wrap) .share-buttons .share-button-text,
+body:has(#asu-directory-wrap) .sharing-buttons .share-button-text {
+  display: none !important;
 }
 
 </style>
