@@ -1,14 +1,87 @@
-<!-- Blogger HTML gadget: each button and star is a separate image/link. -->
-<nav class="asu-nav" aria-label="Navegación principal">
-  <img class="asu-flower" src="https://raw.githubusercontent.com/futuristicsunflower-bit/Sunflower-blog/main/assets/nav-flower-left.svg" alt="">
-  <a href="https://a-sunflower-s-universe.blogspot.com/"><img src="https://raw.githubusercontent.com/futuristicsunflower-bit/Sunflower-blog/main/assets/nav-1.svg" alt="Inicio"></a>
-  <img class="asu-star" src="https://raw.githubusercontent.com/futuristicsunflower-bit/Sunflower-blog/main/assets/star-1.svg" alt="">
-  <a href="https://a-sunflower-s-universe.blogspot.com/p/universe-directory.html"><img src="https://raw.githubusercontent.com/futuristicsunflower-bit/Sunflower-blog/main/assets/nav-2.svg" alt="Universe Directory"></a>
-  <img class="asu-star" src="https://raw.githubusercontent.com/futuristicsunflower-bit/Sunflower-blog/main/assets/star-2.svg" alt="">
-  <a href="https://a-sunflower-s-universe.blogspot.com/#sobre-mi"><img src="https://raw.githubusercontent.com/futuristicsunflower-bit/Sunflower-blog/main/assets/nav-3.svg" alt="Sobre mí"></a>
-  <img class="asu-star" src="https://raw.githubusercontent.com/futuristicsunflower-bit/Sunflower-blog/main/assets/star-3.svg" alt="">
-  <a href="https://a-sunflower-s-universe.blogspot.com/search"><img src="https://raw.githubusercontent.com/futuristicsunflower-bit/Sunflower-blog/main/assets/nav-4.svg" alt="El Blog"></a>
-  <img class="asu-star" src="https://raw.githubusercontent.com/futuristicsunflower-bit/Sunflower-blog/main/assets/star-4.svg" alt="">
-  <a href="https://a-sunflower-s-universe.blogspot.com/#contacto"><img src="https://raw.githubusercontent.com/futuristicsunflower-bit/Sunflower-blog/main/assets/nav-5.svg" alt="Contacto"></a>
-  <img class="asu-flower" src="https://raw.githubusercontent.com/futuristicsunflower-bit/Sunflower-blog/main/assets/nav-flower-right.svg" alt="">
-</nav>
+<!-- A Sunflower's Universe | Blogger HTML/JavaScript gadget
+     Ilustración PNG alojada en GitHub + cinco zonas de enlace independientes.
+     En móvil, desliza horizontalmente para conservar el tamaño y la legibilidad. -->
+<style>
+#asu-illustrated-nav,
+#asu-illustrated-nav * { box-sizing: border-box; }
+
+#asu-illustrated-nav {
+  width: 100%;
+  margin: 12px auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+#asu-illustrated-nav::-webkit-scrollbar { display: none; }
+
+#asu-illustrated-nav .asu-nav-stage {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  line-height: 0;
+}
+#asu-illustrated-nav .asu-nav-stage > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;
+}
+#asu-illustrated-nav .asu-hotspot {
+  position: absolute;
+  top: 35.5%;
+  height: 34%;
+  display: block;
+  z-index: 2;
+  border-radius: 100px;
+  background: transparent;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+#asu-illustrated-nav .asu-hotspot:focus-visible {
+  outline: 3px solid #fff2a6;
+  outline-offset: 2px;
+}
+#asu-illustrated-nav .asu-home      { left: 5%;    width: 15.8%; }
+#asu-illustrated-nav .asu-directory { left: 24.1%; width: 15.9%; }
+#asu-illustrated-nav .asu-about     { left: 42.9%; width: 15.5%; }
+#asu-illustrated-nav .asu-blog      { left: 61.4%; width: 15%; }
+#asu-illustrated-nav .asu-contact   { left: 79.1%; width: 16%; }
+
+@media (max-width: 600px) {
+  #asu-illustrated-nav .asu-nav-stage {
+    min-width: 1000px;
+  }
+}
+</style>
+
+<div id="asu-illustrated-nav">
+  <nav class="asu-nav-stage" aria-label="Menú principal de A Sunflower's Universe">
+    <img
+      src="https://raw.githubusercontent.com/futuristicsunflower-bit/Sunflower-blog/main/assets/sunflower-menu-transparent.png"
+      alt="Menú ornamental de A Sunflower's Universe"
+      width="2172"
+      height="369"
+    >
+
+    <a class="asu-hotspot asu-home"
+       href="https://a-sunflower-s-universe.blogspot.com/"
+       aria-label="Inicio" title="Inicio"></a>
+
+    <a class="asu-hotspot asu-directory"
+       href="https://a-sunflower-s-universe.blogspot.com/p/universe-directory.html"
+       aria-label="Universe Directory" title="Universe Directory"></a>
+
+    <a class="asu-hotspot asu-about"
+       href="https://a-sunflower-s-universe.blogspot.com/#sobre-mi"
+       aria-label="Sobre mí" title="Sobre mí"></a>
+
+    <a class="asu-hotspot asu-blog"
+       href="https://a-sunflower-s-universe.blogspot.com/search"
+       aria-label="El Blog" title="El Blog"></a>
+
+    <a class="asu-hotspot asu-contact"
+       href="https://a-sunflower-s-universe.blogspot.com/#contacto"
+       aria-label="Contacto" title="Contacto"></a>
+  </nav>
+</div>
